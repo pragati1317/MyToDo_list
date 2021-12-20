@@ -7,7 +7,7 @@ const todolist = document.querySelector('.todo-list');
 const header = document.querySelector('.header');
 const select=document.querySelector('.select');
 //Event Listeners
-document.addEventListener('DOMContentLoaded',getTodos);
+document.addEventListener("DOMContentLoaded",getTodos);
 todoButton.addEventListener("click", addTodo);
 todolist.addEventListener("click", deleteAndCheck);
 select.addEventListener("click", filterTodo );
@@ -175,7 +175,7 @@ function removeLocalTodo(todo)
    // Now lets find a index value of that deleting element
     //splice method use for a removing element from local storage of web browser 
     // todoindex is position and second parameter is how many time i want to remove a element
-   todos.splice(todos.indexof(todoIndex),1);
+   todos.splice((todos.indexOf(todoIndex)),1);
    localStorage.setItem("todos", JSON.stringify(todos));
 
 }
